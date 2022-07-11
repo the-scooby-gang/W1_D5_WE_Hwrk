@@ -57,6 +57,22 @@ def find_pet_by_name(pet_shop, name):
 
     #(I tried) 
 
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_shop['pets'].append(new_pet)
+
+def get_customer_cash(customer):
+    return customer('cash')
+
+def remove_customer_cash(customer, amount):
+    customer ['cash'] -= amount
+
+def get_customer_pet_count(customer):
+    return len(customer['pets'])
+
+def add_pet_to_customer(customer, pet):
+    customer['pets'].append(pet)
+
+
 
 
 
